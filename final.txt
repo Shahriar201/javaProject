@@ -1,0 +1,126 @@
+package javaapp;
+
+import java.util.Scanner;
+
+
+ 
+  @author Student
+//convert marks to 80% then add a name, total marks, attendence marks then display the marks with grade and sort the output file
+ 
+public class JavaApp {
+
+   
+
+    static void grade(double num) {
+        if (num = 80) {
+            System.out.println(A+);
+        } else if (num = 79 && num = 70) {
+            System.out.println(A);
+        } else if (num = 69 && num = 60) {
+            System.out.println(B);
+        } else if (num = 59 && num = 50) {
+            System.out.println(C);
+        } else if (num = 49 && num = 40) {
+            System.out.println(D);
+        } else {
+            System.out.println(F);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int arr[] = new int[5];
+
+        Scanner input = new Scanner(System.in);
+        double a1, b1, c1, d1;
+        double a2, b2, c2, d2;
+        double a3, b3, c3, d3;
+        double a4, b4, c4, d4;
+        double a5, b5, c5, d5;
+
+        String f1;
+        String f2;
+        String f3;
+        String f4;
+        String f5;
+
+        f1 = input.next();
+        b1 = input.nextDouble();
+        d1 = input.nextDouble();
+
+        f2 = input.next();
+        b2 = input.nextDouble();
+        d2 = input.nextDouble();
+
+        f3 = input.next();
+        b3 = input.nextDouble();
+        d3 = input.nextDouble();
+
+        f4 = input.next();
+        b4 = input.nextDouble();
+        d4 = input.nextDouble();
+
+        f5 = input.next();
+        b5 = input.nextDouble();
+        d5 = input.nextDouble();
+
+        c1 = (b1  90)  100;
+        c2 = (b2  90)  100;
+        c3 = (b3  90)  100;
+        c4 = (b4  90)  100;
+        c5 = (b5  90)  100;
+
+        System.out.println(After convert);
+        System.out.println(f1 +  +  + c1);
+        System.out.println(f2 +  +  + c2);
+        System.out.println(f3 +  +  + c3);
+        System.out.println(f4 +  +  + c4);
+        System.out.println(f5 +   +  + c5);
+
+        System.out.println(Enert attendance marks);
+
+        d1 = input.nextDouble();
+        d2 = input.nextDouble();
+        d3 = input.nextDouble();
+        d4 = input.nextDouble();
+        d5 = input.nextDouble();
+        System.out.println(after add attendance marks );
+
+        arr[0] = (int) (c1 + d1);
+        arr[1] = (int) (c2 + d2);
+        arr[2] = (int) (c3 + d3);
+        arr[3] = (int) (c4 + d4);
+        arr[4] = (int) (c5 + d5);
+
+        System.out.println(Rahim  +  + arr[0]);
+        System.out.println(Karim  +  + arr[1]);
+        System.out.println(Shain  +  + arr[2]);
+        System.out.println(Rimi  +  + arr[3]);
+        System.out.println(Tumpa  +  + arr[4]);
+
+        grade(arr[0]);
+        grade(arr[1]);
+        grade(arr[2]);
+        grade(arr[3]);
+        grade(arr[4]);
+
+        for (int i = 0; i  5-1; i++){ 
+            for (int j = 0; j  5-i-1; j++) 
+                if (arr[j]  arr[j+1]) 
+                { 
+                     swap arr[j+1] and arr[i] 
+                    int temp = arr[j]; 
+                    arr[j] = arr[j+1]; 
+                    arr[j+1] = temp; 
+                } 
+    } 
+        
+        for (int i=0; i5; ++i) {
+            System.out.print(arr[i] +  ); 
+        System.out.println(); 
+        }
+        
+
+    }
+
+}
